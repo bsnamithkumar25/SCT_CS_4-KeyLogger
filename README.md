@@ -1,65 +1,39 @@
-Keylogger – Ethical Key Capture Tool in Python
-SkillCraft Cybersecurity Internship – Task 4
-Author: B S Namith Kumar
-Domain: Cybersecurity
+# Python Keylogger – Keystroke Monitoring Tool
 
-Project Overview
-This is a Python-based keylogger tool developed for Task 4 of my internship at SkillCraft Technology. It captures keystrokes in real time and logs them to a file for educational demonstration of keyboard input monitoring.
+**SkillCraft Cybersecurity Internship – Task 4**  
+**Author:** B S Namith Kumar  
+**Domain:** Cybersecurity
 
-Features
-Captures all keyboard input, including alphanumeric and special keys
+---
 
-Records keystrokes continuously to a text file (key_log.txt)
+## Project Overview
 
-Runs in the background using a listener setup
+This project is a Python-based keylogger developed as part of Task 4 of my SkillCraft Technology internship. It records all keyboard inputs on a system, storing them securely in a log file. This tool is designed to demonstrate the fundamentals of keylogging techniques often studied in the context of ethical hacking and system security analysis.
 
-Modular CLI/script structure for clean execution
+---
 
-Learning Outcomes
-Learned how to use the pynput library to listen for keyboard events
+## Features
 
-Built logic for continuous monitoring and file output
+- Captures and records every key press
+- Logs saved locally in a `.txt` file
+- Runs silently in the background
+- Easy to start and stop
+- Cross-platform compatible with `pynput` library
 
-Explored ethical considerations and importance of consent in cyber tools
+---
 
-Implemented a basic background process using Python
+## Learning Outcomes
 
-Practiced secure logging and simple file handling
+- Understood how keylogging works at the OS-level
+- Learned to use the `pynput` library to monitor keyboard events
+- Practiced secure file handling and logging
+- Gained insights into real-world applications of keyloggers in cybersecurity (e.g., penetration testing, forensic analysis)
+- Reinforced ethical boundaries and legal considerations of such tools
 
-Sample Usage
-bash
-Copy
-Edit
-python keylogger.py
-Output:
+---
 
-A file named key_log.txt in the working directory
+## Sample Usage
 
-Every key pressed (letters, enter, space, shift, etc.) logged with timestamps
-
-Notes
-Requires pynput library (pip install pynput)
-
-Intended for ethical and educational use only — do not deploy on devices without explicit permission
-
-Compatible with Python 3.x on Windows, macOS, or Linux
-
-Outputs a simple plaintext log; additional formatting or encryption can be added
-
-How to Run
-Install Python 3
-
-Install dependency:
-
-bash
-Copy
-Edit
-pip install pynput
-Run the script:
-
-bash
-Copy
-Edit
-python keylogger.py
-Ethical Usage
-This tool is designed strictly for learning and demonstration. Misuse of keylogging software can lead to serious legal consequences. Always obtain consent and respect privacy regulations.
+Start the keylogger:
+```bash
+python main.py
